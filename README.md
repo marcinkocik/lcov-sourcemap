@@ -2,6 +2,8 @@
 
 > Transform an LCOV file using sourcemaps.
 
+This is a for of Tapad/lcov-sourcemap that includes fixes to increase compatibility with newer versions of sourcemap
+
 ---
 ## Wat?
 * Run tests against transformed, concat'ed, etc. dist file
@@ -9,16 +11,16 @@
 
 ---
 ## Install
-Install with [npm](https://github.com/Tapad/lcov-sourcemap)
+Install with [npm](https://github.com/flowpl/lcov-sourcemap)
 
 ```
-npm install --save-dev lcov-sourcemap
+npm install --save-dev lcov-sourcemap-x
 ```
 
 ---
 ## Usage
 ```
-var lcovSourcemap = require("lcov-sourcemap");
+var lcovSourcemap = require("lcov-sourcemap-x");
 lcovSourcemap("./coverage/lcov-raw.info", {
 	app: "./dist/js/app.js.map",
 	others: "./dist/js/others.js.map"
